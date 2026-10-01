@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "src/fieldshift/api/app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/fieldshift/api/app.py"
+    }
+  ]
+}
